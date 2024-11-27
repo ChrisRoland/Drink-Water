@@ -1,107 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
-    --border-color: #144fc6;
-    --fill-color: #6ab3f8;
+  --border-color: #144fc6;
+  --fill-color: #6ab3f8;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #3494e4;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
+  background-color: #3495e4;
+  background-image: linear-gradient(
+      rgba(52, 149, 228, 0.5),
+      rgba(52, 149, 228, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1495774539583-885e02cca8c2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: var(--fill-color);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 h1 {
-    margin: 10px 0 0;
+  margin: 10px 0 0;
+  text-shadow: 2px 2px 5px black;
 }
 
 h3 {
-    font-weight: 400;
-    margin: 10px 0;
+  font-weight: 400;
+  margin: 10px 0;
+  text-shadow: 2px 2px 5px black;
 }
 
 .cup {
-    background-color: #fff;
-    border: 4px solid var(--border-color);
-    color: var(--border-color);
-    border-radius: 0 0 40px 40px;
-    height: 330px;
-    width: 150px;
-    margin: 30px 0;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}   
+  background-color: #fff;
+  border: 4px solid var(--border-color);
+  color: var(--border-color);
+  border-radius: 0 0 40px 40px;
+  height: 330px;
+  width: 150px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
 
 .cup.cup-small {
-    width: 50px;
-    height: 95px;
-    border-radius: 0 0 15px 15px;
-    background-color: rgba(red, green, blue, 0.9);
-    cursor: pointer;
-    font-size: 14px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 5px;
-    transition: 0.3s ease;
+  width: 50px;
+  height: 95px;
+  border-radius: 0 0 15px 15px;
+  background-color: rgba(red, green, blue, 0.9);
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  transition: 0.3s ease;
 }
 
 .cups {
-    display: flex;
-    flex-wrap: wrap;
-    width: 280px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  justify-content: center;
+  align-items: center;
 }
 
 .cup.cup-small.full {
-    background-color: var(--fill-color);
-    color: #fff;
+  background-color: var(--fill-color);
+  color: #fff;
 }
 
 .remained {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex: 1;
-    transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
 }
 
 .remained span {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .remained small {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .percentage {
-    background-color: var(--fill-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-    height: 0;
-    transition: 0.3s ease;
+  background-color: var(--fill-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  height: 0;
+  transition: 0.3s ease;
 }
 
 .text {
-    text-align: center;
-    margin: 0 0 5px;
+  text-align: center;
+  margin: 0 0 5px;
+  text-shadow: 2px 2px 5px black;
 }
